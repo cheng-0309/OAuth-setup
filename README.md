@@ -12,13 +12,15 @@ npm install
 
 ## Configuration
 
-Add your Google Cloud Console OAuth 2.0 credentials in [index.js](file:///Users/cheng/Desktop/Oauth%20setup/index.js):
-- `ClientID`
-- `ClientSecret`
+Configure your Google Cloud Console OAuth 2.0 credentials in `.env`:
+- `CLIENT_ID`
+- `CLIENT_SECRET`
+- `PORT=3031`
+- `REDIRECT_URI=http://localhost:3031/callback`
 
 Authorized redirect URI in Google Cloud Console:
 ```
-http://localhost:3003/callback
+http://localhost:3031/callback
 ```
 
 ## Running the Server
@@ -32,5 +34,4 @@ http://localhost:3003/callback
   npm run dev
   ```
 
-Server will run on [http://localhost:3003](http://localhost:3003).
-# OAuth-setup
+Server will run on [http://localhost:3031](http://localhost:3031).
